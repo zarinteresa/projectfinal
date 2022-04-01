@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <title>Add Topic</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- <link href="css/forms.css" rel="stylesheet" type="text/css"> -->
+   <link rel="stylesheet" href="css/addtopic.css">
+   <link rel="stylesheet" href="css/menu.css">
+   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+</head>
+
+<body>
+   <header>
+      <div class="head_top">
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="homepage.php"><img src="css/images/logo.png" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                           data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                        </button>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <section class="banner_main">
+            <div class="container">
+               <div class="row d_flex">
+                  <div class=" col-xl-8 col-lg-8 col-md-8 col-12-9">
+                     <div class="text-bg">
+                        <h3>Discussion Forum of <br>IIT-JU</h3>
+                        
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-12-3">
+                     <form method="post" action="do_addtopic.php" id="addForm">
+                        <h2>Ask your Question</h2>
+                        <p><input type="text" id="topic_title" name="topic_title" placeholder="Title of the topic"></input></p> 
+                        <p><input id="post_text" name="post_text" placeholder="What would you like to tell us.."></input></p>
+                        <button id = "addTopic" class = "btn" type="submit" name="submit">Send Message</button>
+                     </form>
+                     <a href="logOut.php"><button class="btn2" >Log Out</button></a>
+                  </div>
+               </div>
+            </div>
+      </div>
+      </section>
+      </div>
+   </header>
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+</body>
+
+</html>
